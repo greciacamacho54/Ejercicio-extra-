@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .screen{
+            width: 600px;
+            height: 600px;
+            background: lightslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: #fff;
+            transition: ease-in-out .25s;
+        }
+        .btn{
+            padding: 1rem 2rem;
+            color: #fff;
+            border-radius: 1rem;
+            margin: 2rem;
+            background: lightslategrey;
+            border: none;
+            cursor: pointer;
+            transition: ease-in-out .15s;
+        }
+        .btn:hover{
+            background: rgb(99, 114, 129);
+        }
+
+        .red{
+            background: #d30a3c;
+        }
+        .btn.red:hover{
+            background: #bd0a37;
+        }
+
+        .green{
+            background: rgb(10, 184, 10);
+        }
+        .btn.green:hover{
+            background: green;
+        }
+
+        .blue{
+            background: #0e6ce6;
+        }
+        .btn.blue:hover{
+            background: #0e53ad;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen" id="screen"></div>
+    <div class="btnBox">
+        <button class="btn red">Rojo</button>
+        <button class="btn green">Verde</button>
+        <button class="btn blue">Azul</button>
+        <button class="btn">Limpiar</button>
+    </div>
+</body>
+</html>
